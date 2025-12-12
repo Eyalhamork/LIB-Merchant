@@ -2,9 +2,9 @@
 'use client';
 
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { Spinner } from '@/components/ui/spinner';
-import { EmptyState } from '@/components/ui/empty-state';
+import Button from '@/components/ui/button';
+import Spinner from '@/components/ui/spinner';
+import EmptyState from '@/components/ui/empty-state';
 
 export interface Column<T> {
   key: string;
@@ -87,7 +87,7 @@ export function DataTable<T extends Record<string, any>>({
   }
 
   if (data.length === 0) {
-    return <EmptyState icon={emptyIcon} message={emptyMessage} />;
+    return <EmptyState icon={emptyIcon} title={emptyMessage} />;
   }
 
   return (

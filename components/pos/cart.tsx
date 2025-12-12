@@ -5,7 +5,7 @@
 import { ShoppingCart, Trash2, Tag, User } from 'lucide-react';
 import Button from '@/components/ui/button';
 import EmptyState from '@/components/ui/empty-state';
-import { CartItemComponent } from './cart-item';
+import CartItem from './cart-item';
 import { useCartStore } from '@/store/cart-store';
 import { formatCurrency } from '@/lib/utils';
 import type { CashSession } from '@/types';
@@ -59,13 +59,13 @@ export default function Cart({ onCheckout, cashSession }: CartProps) {
       <div className="flex-1 overflow-y-auto p-3 space-y-2">
         {items.length === 0 ? (
           <EmptyState
-            icon={ShoppingCart}
+            icon={<ShoppingCart />}
             title="Cart is empty"
             description="Add products to start a sale"
           />
         ) : (
           items.map((item) => (
-            <CartItemComponent
+            <CartItem
               key={item.shop_product_id}
               item={item}
               onUpdateQuantity={updateQuantity}

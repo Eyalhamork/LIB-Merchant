@@ -26,7 +26,7 @@ export function CustomerList({
   if (customers.length === 0) {
     return (
       <EmptyState
-        icon={Users}
+        icon={<Users />}
         title={emptyTitle}
         description={emptyDescription}
       />

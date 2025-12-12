@@ -13,7 +13,7 @@ interface CartItemProps {
   maxQuantity?: number;
 }
 
-export function CartItemComponent({
+export default function CartItem({
   item,
   onUpdateQuantity,
   onRemove,

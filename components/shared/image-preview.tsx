@@ -2,9 +2,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Modal } from '@/components/ui/modal';
-import { Button } from '@/components/ui/button';
-import { Spinner } from '@/components/ui/spinner';
+import Modal from '@/components/ui/modal';
+import Button from '@/components/ui/button';
+import Spinner from '@/components/ui/spinner';
 
 interface ImagePreviewProps {
   isOpen: boolean;

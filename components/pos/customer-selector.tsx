@@ -143,7 +143,7 @@ export function CustomerSelector({
             </div>
           ) : filteredCustomers.length === 0 ? (
             <EmptyState
-              icon={UserPlus}
+              icon={<UserPlus />}
               title={searchQuery ? 'No customers found' : 'No customers yet'}
               description={
                 searchQuery

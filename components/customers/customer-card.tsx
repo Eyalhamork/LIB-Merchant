@@ -37,12 +37,12 @@ export function CustomerCard({ customer, onClick, showCreditInfo = true }: Custo
             <div className="flex items-center gap-2 mb-1">
               <h3 className="font-medium text-gray-900 truncate">{customer.name}</h3>
               {!customer.is_active && (
-                <Badge variant="secondary" className="bg-red-100 text-red-800">
+                <Badge variant="default" className="bg-red-100 text-red-800">
                   Inactive
                 </Badge>
               )}
               {hasCredit && showCreditInfo && (
-                <Badge variant="secondary" className="bg-amber-100 text-amber-800">
+                <Badge variant="default" className="bg-amber-100 text-amber-800">
                   Has Credit
                 </Badge>
               )}

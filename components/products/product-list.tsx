@@ -157,7 +157,7 @@ export function ProductList({
       {/* Product Grid */}
       {sortedProducts.length === 0 ? (
         <EmptyState
-          icon={Package}
+          icon={<Package />}
           title={
             searchQuery || selectedCategory || stockFilter !== 'all'
               ? 'No products found'

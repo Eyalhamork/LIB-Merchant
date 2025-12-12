@@ -56,7 +56,7 @@ export default function ProductsPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {products.length === 0 ? (
           <EmptyState
-            icon={Package}
+            icon={<Package />}
             title="No products yet"
             description="Add your first product to start managing inventory"
             action={

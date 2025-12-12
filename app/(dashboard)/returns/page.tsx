@@ -133,7 +133,7 @@ export default function ReturnsPage() {
                     <h3 className="font-medium text-gray-900">
                       Return #{returnItem.id.slice(0, 8)}
                     </h3>
-                    <Badge variant={returnItem.refund_method === 'exchange' ? 'primary' : 'secondary'}>
+                    <Badge variant={returnItem.refund_method === 'exchange' ? 'primary' : 'default'}>
                       {getRefundMethodLabel(returnItem.refund_method)}
                     </Badge>
                   </div>
