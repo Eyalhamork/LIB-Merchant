@@ -110,12 +110,12 @@ export default function CustomerDetailPage() {
               <div className="flex items-center gap-2">
                 <h1 className="text-xl font-bold text-gray-900">{customer.name}</h1>
                 {!customer.is_active && (
-                  <Badge variant="secondary" className="bg-red-100 text-red-800">
+                  <Badge variant="default" className="bg-red-100 text-red-800">
                     Inactive
                   </Badge>
                 )}
                 {hasCredit && (
-                  <Badge variant="secondary" className="bg-amber-100 text-amber-800">
+                  <Badge variant="default" className="bg-amber-100 text-amber-800">
                     Has Credit
                   </Badge>
                 )}

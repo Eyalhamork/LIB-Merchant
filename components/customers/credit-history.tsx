@@ -83,7 +83,7 @@ export function CreditHistory({ customerId }: CreditHistoryProps) {
     return (
       <Card className="p-6">
         <EmptyState
-          icon={CreditCard}
+          icon={<CreditCard />}
           title="No payment history"
           description="Credit payments will appear here"
         />
@@ -96,7 +96,7 @@ export function CreditHistory({ customerId }: CreditHistoryProps) {
       <div className="flex items-center gap-2 mb-4">
         <TrendingDown className="h-5 w-5 text-gray-600" />
         <h3 className="font-semibold text-gray-900">Payment History</h3>
-        <Badge variant="secondary" className="ml-auto">
+        <Badge variant="default" className="ml-auto">
           {payments.length} payment{payments.length > 1 ? 's' : ''}
         </Badge>
       </div>

@@ -1,8 +1,8 @@
 // components/shared/confirm-dialog.tsx
 'use client';
 
-import { Modal } from '@/components/ui/modal';
-import { Button } from '@/components/ui/button';
+import Modal from '@/components/ui/modal';
+import Button from '@/components/ui/button';
 
 interface ConfirmDialogProps {
   isOpen: boolean;

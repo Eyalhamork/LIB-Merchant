@@ -187,7 +187,7 @@ export class SyncService {
         if (product.current_quantity < item.quantity) {
           return {
             valid: false,
-            error: `Insufficient stock for ${product.product?.name}. Available: ${product.current_quantity}, Required: ${item.quantity}`,
+            error: `Insufficient stock for ${(product.product as any)?.[0]?.name || (product.product as any)?.name}. Available: ${product.current_quantity}, Required: ${item.quantity}`,
           };
         }
       }

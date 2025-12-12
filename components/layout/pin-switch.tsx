@@ -10,7 +10,7 @@ import Button from '@/components/ui/button';
 import Input from '@/components/ui/input';
 import { switchToEmployee } from '@/lib/supabase/employees';
 import { supabase } from '@/lib/supabase/client';
-import { UserSwitch, AlertCircle } from 'lucide-react';
+import { Users, AlertCircle } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface PinSwitchProps {
@@ -84,7 +84,7 @@ export function PinSwitch({ isOpen, onClose }: PinSwitchProps) {
       <div className="space-y-4">
         {/* Info */}
         <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
-          <UserSwitch className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+          <Users className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
           <div>
             <p className="text-sm font-medium text-emerald-900">Quick User Switch</p>
             <p className="text-sm text-emerald-800 mt-1">

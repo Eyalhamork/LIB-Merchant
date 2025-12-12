@@ -79,7 +79,7 @@ export default function LowStockList({
   if (products.length === 0) {
     return (
       <EmptyState
-        icon={Package}
+        icon={<Package />}
         title="No low stock items"
         description="All products are adequately stocked. Great job!"
       />

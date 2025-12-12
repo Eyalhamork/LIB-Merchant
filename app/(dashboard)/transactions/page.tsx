@@ -221,7 +221,7 @@ export default function TransactionsPage() {
                       <p className="text-gray-600">Payment</p>
                       <div className="flex flex-wrap gap-1 mt-1">
                         {transaction.payments?.map((payment, idx) => (
-                          <Badge key={idx} variant="secondary" className="text-xs">
+                          <Badge key={idx} variant="default" className="text-xs">
                             {getPaymentMethodLabel(payment.payment_method)}
                           </Badge>
                         ))}

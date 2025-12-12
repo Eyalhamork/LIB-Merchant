@@ -51,7 +51,7 @@ export async function logPriceChange(
       .eq('id', shopProductId)
       .single();
 
-    const productName = shopProduct?.product?.name || 'Unknown Product';
+    const productName = (shopProduct?.product as any)?.[0]?.name || (shopProduct?.product as any)?.name || 'Unknown Product';
 
     // Insert price change record
     const { error: priceError } = await supabase.from('price_changes').insert({

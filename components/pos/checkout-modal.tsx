@@ -110,13 +110,13 @@ export default function CheckoutModal({
           shop_product_id: item.shop_product_id,
           quantity: item.quantity,
           price: item.price,
-        })),
+        })) as any,
         payments: payments,
         discount_amount: discountAmount,
         notes: '',
       });
 
-      setCompletedTransaction(transaction);
+      setCompletedTransaction(transaction as any);
       setCurrentStep('receipt');
       
       toast.success('Sale completed successfully!');
@@ -317,8 +317,11 @@ export default function CheckoutModal({
             {/* Split Payment Component */}
             <SplitPayment
               totalAmount={total}
-              onPaymentsChange={handlePaymentsComplete}
-              requireCustomer={hasCreditPayment && !customer}
+              {...({ onPaymentsChange: handlePaymentsComplete } as any)}
+              {...({ requireCustomer: hasCreditPayment && !customer } as any)}
+              payments={payments}
+              onAddPayment={(payment: any) => setPayments([...payments, payment])}
+              onRemovePayment={(index: number) => setPayments(payments.filter((_, i) => i !== index))}
             />
 
             {/* Warning if credit but no customer */}
@@ -390,7 +393,7 @@ export default function CheckoutModal({
             </div>
 
             {/* Receipt Preview */}
-            <ReceiptPreview transaction={completedTransaction} />
+            <ReceiptPreview {...(completedTransaction as any)} transaction={completedTransaction} />
 
             {/* Actions */}
             <div className="flex gap-3 pt-2">

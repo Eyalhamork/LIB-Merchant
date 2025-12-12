@@ -79,6 +79,31 @@ export async function openCashSession(
 }
 
 /**
+ * Close a cash session
+ */
+export async function closeCashSession(
+  sessionId: string,
+  closingBalance: number,
+  notes?: string
+) {
+  const { data, error } = await supabase
+    .from('cash_sessions')
+    .update({
+      closing_balance: closingBalance,
+      closed_at: new Date().toISOString(),
+      status: 'closed',
+      notes: notes || null,
+    })
+    .eq('id', sessionId)
+    .select()
+    .single();
+
+  if (error) throw error;
+
+  return data;
+}
+
+/**
  * Validate stock availability for cart items
  */
 export async function validateStockAvailability(items: CartItem[]): Promise<{

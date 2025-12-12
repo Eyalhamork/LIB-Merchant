@@ -134,7 +134,7 @@ export default function StockMovementsList({
   if (!isLoading && movements.length === 0) {
     return (
       <EmptyState
-        icon={RotateCcw}
+        icon={<RotateCcw />}
         title="No stock movements found"
         description={
           filters.movementType || filters.startDate || filters.endDate

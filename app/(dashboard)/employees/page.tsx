@@ -188,7 +188,7 @@ export default function EmployeesPage() {
         {/* Employee List */}
         {filteredEmployees.length === 0 ? (
           <EmptyState
-            icon={Users}
+            icon={<Users />}
             title={
               searchQuery
                 ? 'No employees found'

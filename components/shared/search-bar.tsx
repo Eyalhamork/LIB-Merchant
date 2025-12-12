@@ -2,8 +2,8 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Input } from '@/components/ui/input';
-import { Spinner } from '@/components/ui/spinner';
+import Input from '@/components/ui/input';
+import Spinner from '@/components/ui/spinner';
 import { debounce } from '@/lib/utils';
 
 interface SearchBarProps {

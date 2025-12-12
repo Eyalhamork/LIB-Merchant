@@ -150,11 +150,15 @@ export async function getTopSellingProducts(
   const grouped = items.reduce((acc: any, item) => {
     const productId = item.shop_product_id;
     if (!acc[productId]) {
+      const shopProducts = item.shop_products as any;
+      const products = shopProducts?.products || shopProducts?.[0]?.products;
+      const productData = Array.isArray(products) ? products[0] : products;
+
       acc[productId] = {
         product_id: productId,
-        product_name: item.shop_products.products.name,
-        category: item.shop_products.products.category,
-        unit: item.shop_products.products.unit,
+        product_name: productData?.name || 'Unknown',
+        category: productData?.category || 'Unknown',
+        unit: productData?.unit || 'unit',
         quantity_sold: 0,
         total_revenue: 0,
         times_sold: 0,
@@ -203,8 +207,8 @@ export async function getEmployeePerformance(
     if (!acc[employeeId]) {
       acc[employeeId] = {
         employee_id: employeeId,
-        employee_name: txn.profiles.name,
-        role: txn.profiles.role,
+        employee_name: (txn.profiles as any)?.[0]?.name || (txn.profiles as any)?.name,
+        role: (txn.profiles as any)?.[0]?.role || (txn.profiles as any)?.role,
         total_sales: 0,
         transaction_count: 0,
         average_sale: 0,

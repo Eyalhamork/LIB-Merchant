@@ -190,7 +190,7 @@ export interface Transaction {
   customer?: { id: string; name: string; phone?: string };
   items?: TransactionItem[];
   payments?: TransactionPayment[];
-  cash_session?: { id: string; opened_at: string };
+  cash_session?: { id: string; opened_at: string; session_date: string };
   voided_by_profile?: { id: string; name: string };
 }
 
@@ -198,12 +198,21 @@ export interface TransactionItem {
   id: string;
   transaction_id: string;
   shop_product_id: string;
-  
+
   quantity: number;
   price_at_sale: number;
   subtotal: number;
-  
+
   created_at: string;
+
+  // Relations (populated by database joins)
+  shop_product?: {
+    id: string;
+    product?: {
+      id: string;
+      name: string;
+    };
+  };
 }
 
 export interface TransactionPayment {

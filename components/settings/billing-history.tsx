@@ -160,7 +160,7 @@ export function BillingHistory({ shopId }: BillingHistoryProps) {
   if (billingRecords.length === 0) {
     return (
       <EmptyState
-        icon={Receipt}
+        icon={<Receipt />}
         title="No billing history"
         description="Your payment history will appear here once you start your subscription"
       />
