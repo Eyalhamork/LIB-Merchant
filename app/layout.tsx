@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   description: 'Cloud-based inventory and sales management system for retail shops in Liberia',
   keywords: ['inventory', 'pos', 'retail', 'liberia', 'shop management', 'sales tracking'],
-  authors: [{ name: 'ShopManager Team' }],
+  authors: [{ name: 'LIB-Merchant Team' }],
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
@@ -26,6 +26,43 @@ export const metadata: Metadata = {
   },
   formatDetection: {
     telephone: false,
+  },
+  metadataBase: new URL('https://lib-merchant.com'),
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://lib-merchant.com',
+    title: APP_NAME,
+    description: 'Cloud-based inventory and sales management system for retail shops in Liberia',
+    siteName: APP_NAME,
+    images: [
+      {
+        url: '/icons/icon-512x512.png',
+        width: 512,
+        height: 512,
+        alt: `${APP_NAME} Logo`,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: APP_NAME,
+    description: 'Cloud-based inventory and sales management system for retail shops in Liberia',
+    images: ['/icons/icon-512x512.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: 'your-google-verification-code',
   },
 };
 

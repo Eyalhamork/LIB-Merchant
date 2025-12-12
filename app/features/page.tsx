@@ -13,7 +13,7 @@ export default function FeaturesPage() {
               <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">S</span>
               </div>
-              <span className="text-xl font-bold text-gray-900">ShopManager</span>
+              <span className="text-xl font-bold text-gray-900">LIB-Merchant</span>
             </Link>
             
             <Link href="/login">

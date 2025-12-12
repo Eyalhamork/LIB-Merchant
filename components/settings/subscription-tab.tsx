@@ -285,7 +285,7 @@ export function SubscriptionTab({ shop, onUpdate }: SubscriptionTabProps) {
                     <p className="text-sm text-gray-600">
                       <span className="font-medium text-gray-900">Or contact us:</span>
                       <br />
-                      Email: support@shopmanager.com
+                      Email: support@lib-merchant.com
                       <br />
                       Phone: +231 XXX XXXX XXX
                     </p>
@@ -309,7 +309,7 @@ export function SubscriptionTab({ shop, onUpdate }: SubscriptionTabProps) {
           <div className="space-y-2 text-sm">
             <div className="flex items-center gap-2">
               <span className="font-medium text-gray-900">Email:</span>
-              <span className="text-emerald-600">support@shopmanager.com</span>
+              <span className="text-emerald-600">support@lib-merchant.com</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-medium text-gray-900">Phone:</span>

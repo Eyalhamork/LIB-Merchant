@@ -29,7 +29,7 @@ interface OfflineStore {
 
 // IndexedDB storage for persistence
 const createIndexedDBStorage = () => {
-  const dbName = 'shopmanager_offline';
+  const dbName = 'lib_merchant_offline';
   const storeName = 'offline_transactions';
   const dbVersion = 1;
 
@@ -154,7 +154,7 @@ export const useOfflineStore = create<OfflineStore>()(
       },
     }),
     {
-      name: 'shopmanager-offline-queue',
+      name: 'lib-merchant-offline-queue',
       storage: createJSONStorage(() => {
         // Check if we're in browser environment
         if (typeof window === 'undefined') {

@@ -52,7 +52,7 @@ export default function ResetPasswordPage() {
       <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
         <div className="w-full max-w-md">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-gray-900">ShopManager</h1>
+            <h1 className="text-3xl font-bold text-gray-900">LIB-Merchant</h1>
           </div>
 
           <Card className="p-6">
@@ -114,7 +114,7 @@ export default function ResetPasswordPage() {
       <div className="w-full max-w-md">
         {/* Logo/Brand */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">ShopManager</h1>
+          <h1 className="text-3xl font-bold text-gray-900">LIB-Merchant</h1>
           <p className="text-gray-600 mt-2">Reset your password</p>
         </div>
 

@@ -498,9 +498,9 @@ export async function uploadProductImage(file: File): Promise<string> {
     formData.append('file', file);
     formData.append(
       'upload_preset',
-      process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET || 'shopmanager'
+      process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET || 'lib_merchant'
     );
-    formData.append('folder', 'shopmanager/products');
+    formData.append('folder', 'lib-merchant/products');
 
     // Upload to Cloudinary
     const response = await fetch(
