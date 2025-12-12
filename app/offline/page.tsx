@@ -1,5 +1,7 @@
 // app/offline/page.tsx
 
+'use client';
+
 import { WifiOff } from 'lucide-react';
 
 export default function OfflinePage() {
