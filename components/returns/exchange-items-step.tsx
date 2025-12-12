@@ -219,7 +219,7 @@ export function ExchangeItemsStep({
         <div
           className={`border rounded-lg p-4 ${
             paymentDue > 0
-              ? 'bg-blue-50 border-blue-200'
+              ? 'bg-emerald-50 border-emerald-200'
               : paymentDue < 0
               ? 'bg-purple-50 border-purple-200'
               : 'bg-gray-50 border-gray-200'
@@ -228,7 +228,7 @@ export function ExchangeItemsStep({
           <p
             className={`text-sm font-medium ${
               paymentDue > 0
-                ? 'text-blue-700'
+                ? 'text-emerald-700'
                 : paymentDue < 0
                 ? 'text-purple-700'
                 : 'text-gray-700'
@@ -243,7 +243,7 @@ export function ExchangeItemsStep({
           <p
             className={`text-2xl font-bold ${
               paymentDue > 0
-                ? 'text-blue-900'
+                ? 'text-emerald-900'
                 : paymentDue < 0
                 ? 'text-purple-900'
                 : 'text-gray-900'
@@ -312,12 +312,12 @@ export function ExchangeItemsStep({
 
       {/* Payment Section (if customer owes money) */}
       {paymentDue > 0 && (
-        <div className="border border-blue-200 rounded-lg p-4 bg-blue-50">
+        <div className="border border-emerald-200 rounded-lg p-4 bg-emerald-50">
           <div className="flex items-start gap-2 mb-4">
-            <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+            <AlertCircle className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
             <div>
-              <h3 className="font-semibold text-blue-900">Payment Required</h3>
-              <p className="text-sm text-blue-700">
+              <h3 className="font-semibold text-emerald-900">Payment Required</h3>
+              <p className="text-sm text-emerald-700">
                 Customer needs to pay {formatCurrency(paymentDue)} for the
                 difference
               </p>
@@ -362,8 +362,8 @@ export function ExchangeItemsStep({
             )}
 
             {paymentMethod !== 'cash' && (
-              <div className="p-3 bg-blue-100 rounded-lg">
-                <p className="text-sm text-blue-900">
+              <div className="p-3 bg-emerald-100 rounded-lg">
+                <p className="text-sm text-emerald-900">
                   Ensure you receive {formatCurrency(paymentDue)} via{' '}
                   {paymentMethod === 'mtn_momo' ? 'MTN MoMo' : 'Orange Money'}
                 </p>
@@ -396,7 +396,7 @@ export function ExchangeItemsStep({
             filteredProducts.map((product) => (
               <div
                 key={product.id}
-                className="flex items-center justify-between p-3 border border-gray-200 rounded-lg hover:border-blue-300 transition-colors"
+                className="flex items-center justify-between p-3 border border-gray-200 rounded-lg hover:border-emerald-300 transition-colors"
               >
                 <div className="flex-1">
                   <p className="font-medium text-gray-900">

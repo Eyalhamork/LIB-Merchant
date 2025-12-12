@@ -160,7 +160,7 @@ export default function POSPage() {
                 onClick={() => setSelectedCategory('all')}
                 className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
                   selectedCategory === 'all'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100'
                 }`}
               >
@@ -172,7 +172,7 @@ export default function POSPage() {
                   onClick={() => setSelectedCategory(category)}
                   className={`px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
                     selectedCategory === category
-                      ? 'bg-blue-600 text-white'
+                      ? 'bg-emerald-600 text-white'
                       : 'bg-white text-gray-700 border border-gray-300 hover:bg-gray-100'
                   }`}
                 >

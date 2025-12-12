@@ -161,8 +161,8 @@ export default function CheckoutModal({
       onClose={handleClose}
       title={
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
-            <StepIcon className="h-5 w-5 text-blue-600" />
+          <div className="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center">
+            <StepIcon className="h-5 w-5 text-emerald-600" />
           </div>
           <div>
             <h3 className="text-lg font-semibold text-gray-900">
@@ -188,7 +188,7 @@ export default function CheckoutModal({
               <div
                 className={`h-8 w-8 rounded-full flex items-center justify-center text-sm font-medium ${
                   currentStep === 'customer'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-green-600 text-white'
                 }`}
               >
@@ -209,7 +209,7 @@ export default function CheckoutModal({
               <div
                 className={`h-8 w-8 rounded-full flex items-center justify-center text-sm font-medium ${
                   currentStep === 'payment'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-200 text-gray-600'
                 }`}
               >
@@ -246,7 +246,7 @@ export default function CheckoutModal({
           )}
           <div className="flex items-center justify-between text-lg font-bold pt-2 border-t border-gray-200">
             <span>Total:</span>
-            <span className="text-blue-600">{formatCurrency(total)}</span>
+            <span className="text-emerald-600">{formatCurrency(total)}</span>
           </div>
         </div>
 
@@ -259,7 +259,7 @@ export default function CheckoutModal({
                 Customer (Optional)
               </label>
               {customer ? (
-                <div className="flex items-center justify-between p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                <div className="flex items-center justify-between p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
                   <div>
                     <p className="font-medium text-gray-900">{customer.name}</p>
                     {customer.phone && (
@@ -281,7 +281,7 @@ export default function CheckoutModal({
               ) : (
                 <button
                   onClick={() => setShowCustomerSelector(true)}
-                  className="w-full p-3 border-2 border-dashed border-gray-300 rounded-lg text-sm text-gray-600 hover:border-blue-400 hover:text-blue-600 transition-colors"
+                  className="w-full p-3 border-2 border-dashed border-gray-300 rounded-lg text-sm text-gray-600 hover:border-emerald-400 hover:text-emerald-700 transition-colors"
                 >
                   + Select Customer
                 </button>
@@ -289,9 +289,9 @@ export default function CheckoutModal({
             </div>
 
             {/* Info */}
-            <div className="flex items-start gap-2 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-              <AlertCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-              <div className="text-sm text-blue-900">
+            <div className="flex items-start gap-2 p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+              <AlertCircle className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+              <div className="text-sm text-emerald-900">
                 <p className="font-medium mb-1">Customer selection is optional</p>
                 <p>
                   Only required if the sale includes credit payment. For cash or mobile

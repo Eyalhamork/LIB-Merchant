@@ -100,7 +100,7 @@ export default function InventoryPage() {
             <Card className="p-6">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm text-gray-600">Total Products</span>
-                <Package className="h-5 w-5 text-blue-600" />
+                <Package className="h-5 w-5 text-emerald-600" />
               </div>
               <div className="text-2xl font-bold text-gray-900">
                 {stats?.totalProducts || 0}
@@ -201,7 +201,7 @@ export default function InventoryPage() {
                 onClick={() => setViewFilter('all')}
                 className={`px-3 py-1 text-sm rounded-md transition-colors ${
                   viewFilter === 'all'
-                    ? 'bg-blue-100 text-blue-700'
+                    ? 'bg-emerald-100 text-emerald-700'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >
@@ -255,7 +255,7 @@ export default function InventoryPage() {
           <div className="flex justify-center">
             <button
               onClick={() => setShowMovements(true)}
-              className="text-blue-600 hover:text-blue-700 font-medium text-sm flex items-center gap-1"
+              className="text-emerald-600 hover:text-emerald-700 font-medium text-sm flex items-center gap-1"
             >
               View all stock movements
               <ArrowRight className="h-4 w-4" />

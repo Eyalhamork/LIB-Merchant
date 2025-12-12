@@ -390,7 +390,7 @@ export default function ProductDetailPage() {
                   setEditData({ ...editData, is_favorite: e.target.checked })
                 }
                 disabled={isSaving}
-                className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                className="h-4 w-4 text-emerald-600 border-gray-300 rounded focus:ring-blue-500"
               />
               <label
                 htmlFor="edit_favorite"

@@ -240,8 +240,8 @@ export function EditEmployeeModal({
 
               {/* Supervisor Permissions */}
               {formData.role === 'supervisor' && (
-                <div className="space-y-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-                  <p className="text-sm font-medium text-blue-900 mb-2">
+                <div className="space-y-3 p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+                  <p className="text-sm font-medium text-emerald-900 mb-2">
                     Supervisor Permissions
                   </p>
 

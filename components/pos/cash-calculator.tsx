@@ -38,9 +38,9 @@ export function CashCalculator({ amount, onComplete }: CashCalculatorProps) {
   return (
     <div className="space-y-4">
       {/* Amount Due */}
-      <div className="bg-blue-50 p-4 rounded-lg">
-        <p className="text-sm text-blue-700 mb-1">Amount Due</p>
-        <p className="text-3xl font-bold text-blue-900">{formatCurrency(amount)}</p>
+      <div className="bg-emerald-50 p-4 rounded-lg">
+        <p className="text-sm text-emerald-700 mb-1">Amount Due</p>
+        <p className="text-3xl font-bold text-emerald-900">{formatCurrency(amount)}</p>
       </div>
 
       {/* Amount Given Input */}

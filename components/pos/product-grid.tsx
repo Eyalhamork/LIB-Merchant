@@ -53,7 +53,7 @@ export default function ProductGrid({
             className={cn(
               'px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors',
               filterCategory === 'all'
-                ? 'bg-blue-600 text-white'
+                ? 'bg-emerald-600 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
             )}
           >
@@ -70,7 +70,7 @@ export default function ProductGrid({
                 className={cn(
                   'px-4 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors',
                   filterCategory === category
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 )}
               >
@@ -91,7 +91,7 @@ export default function ProductGrid({
             className={cn(
               'relative p-3 border-2 rounded-lg text-left transition-all',
               product.current_quantity > 0 && hasActiveSession
-                ? 'border-gray-200 hover:border-blue-500 hover:shadow-md cursor-pointer bg-white'
+                ? 'border-gray-200 hover:border-emerald-500 hover:shadow-md cursor-pointer bg-white'
                 : 'border-gray-100 opacity-50 cursor-not-allowed bg-gray-50'
             )}
           >
@@ -121,7 +121,7 @@ export default function ProductGrid({
                 {product.product?.name}
               </h3>
 
-              <p className="text-lg font-bold text-blue-600">
+              <p className="text-lg font-bold text-emerald-600">
                 {formatCurrency(product.selling_price)}
               </p>
 
@@ -158,7 +158,7 @@ export default function ProductGrid({
           <p className="text-gray-500">No products in this category</p>
           <button
             onClick={() => setFilterCategory('all')}
-            className="mt-2 text-blue-600 hover:text-blue-700 font-medium"
+            className="mt-2 text-emerald-600 hover:text-emerald-700 font-medium"
           >
             View all products
           </button>

@@ -195,7 +195,7 @@ export function DatePicker({
                     className={`
                       p-2 text-sm rounded hover:bg-gray-100
                       ${disabled ? 'text-gray-300 cursor-not-allowed hover:bg-transparent' : ''}
-                      ${selected ? 'bg-blue-600 text-white hover:bg-blue-700' : ''}
+                      ${selected ? 'bg-emerald-600 text-white hover:bg-emerald-700' : ''}
                     `}
                   >
                     {day}

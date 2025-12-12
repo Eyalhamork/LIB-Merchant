@@ -50,7 +50,7 @@ export default function CreditSummary({
         <h3 className="text-lg font-semibold text-gray-900">Outstanding Credit</h3>
         <Link
           href="/customers"
-          className="text-sm text-blue-600 hover:text-blue-700 font-medium"
+          className="text-sm text-emerald-600 hover:text-emerald-700 font-medium"
         >
           View All
         </Link>
@@ -114,7 +114,7 @@ export default function CreditSummary({
       {customersWithCredit > 5 && (
         <Link
           href="/customers"
-          className="block text-center text-sm text-blue-600 hover:text-blue-700 font-medium mt-4"
+          className="block text-center text-sm text-emerald-600 hover:text-emerald-700 font-medium mt-4"
         >
           View {customersWithCredit - 5} more
         </Link>

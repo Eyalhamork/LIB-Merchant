@@ -148,7 +148,7 @@ export function CloseSessionModal({
               Math.abs(discrepancy) < 0.01
                 ? 'bg-green-50 border-green-200'
                 : discrepancy > 0
-                ? 'bg-blue-50 border-blue-200'
+                ? 'bg-emerald-50 border-emerald-200'
                 : 'bg-amber-50 border-amber-200'
             }`}
           >
@@ -163,8 +163,8 @@ export function CloseSessionModal({
                   </>
                 ) : discrepancy > 0 ? (
                   <>
-                    <TrendingUp className="h-5 w-5 text-blue-600" />
-                    <span className="font-medium text-blue-900">Surplus</span>
+                    <TrendingUp className="h-5 w-5 text-emerald-600" />
+                    <span className="font-medium text-emerald-900">Surplus</span>
                   </>
                 ) : (
                   <>
@@ -178,7 +178,7 @@ export function CloseSessionModal({
                   Math.abs(discrepancy) < 0.01
                     ? 'text-green-900'
                     : discrepancy > 0
-                    ? 'text-blue-900'
+                    ? 'text-emerald-900'
                     : 'text-amber-900'
                 }`}
               >

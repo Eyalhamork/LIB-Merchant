@@ -32,7 +32,7 @@ export function SessionStatusBadge({ session, showIcon = true }: SessionStatusBa
 
   if (session.status === 'closed') {
     return (
-      <Badge className="bg-blue-100 text-blue-800">
+      <Badge className="bg-emerald-100 text-emerald-800">
         {showIcon && <CheckCircle className="h-3 w-3 mr-1" />}
         Closed
       </Badge>

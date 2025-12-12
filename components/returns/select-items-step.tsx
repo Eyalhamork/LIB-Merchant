@@ -196,7 +196,7 @@ export function SelectItemsStep({
                     onChange={(e) =>
                       updateItem(index, { restore_to_stock: e.target.checked })
                     }
-                    className="h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                    className="h-4 w-4 text-emerald-600 border-gray-300 rounded focus:ring-blue-500"
                     disabled={
                       item.reason === 'damaged' || item.reason === 'expired'
                     }

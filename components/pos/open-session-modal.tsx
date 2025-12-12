@@ -101,9 +101,9 @@ export function OpenSessionModal({
     >
       <div className="space-y-6">
         {/* Instructions */}
-        <div className="flex items-start gap-3 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-          <Calculator className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-          <div className="text-sm text-blue-900">
+        <div className="flex items-start gap-3 p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
+          <Calculator className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+          <div className="text-sm text-emerald-900">
             <p className="font-medium mb-1">How to count your opening balance:</p>
             <ol className="list-decimal list-inside space-y-1 mt-2">
               <li>Count all cash currently in your drawer</li>
@@ -154,8 +154,8 @@ export function OpenSessionModal({
                 onClick={() => handleQuickAmount(amount)}
                 className={`p-3 text-sm font-medium rounded-lg border-2 transition-colors ${
                   parsedBalance === amount
-                    ? 'border-blue-600 bg-blue-50 text-blue-600'
-                    : 'border-gray-300 text-gray-700 hover:border-blue-300 hover:bg-blue-50'
+                    ? 'border-emerald-600 bg-emerald-50 text-emerald-600'
+                    : 'border-gray-300 text-gray-700 hover:border-emerald-300 hover:bg-emerald-50'
                 }`}
               >
                 {amount === 0 ? 'Zero' : formatCurrency(amount)}

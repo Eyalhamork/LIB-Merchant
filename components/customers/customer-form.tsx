@@ -221,10 +221,10 @@ export function CustomerForm({
 
       {/* Info Box */}
       {!isEditMode && (
-        <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
           <div className="flex items-start gap-2">
             <svg
-              className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0"
+              className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -235,8 +235,8 @@ export function CustomerForm({
               />
             </svg>
             <div>
-              <p className="text-sm font-medium text-blue-900">About Customer Records</p>
-              <p className="text-xs text-blue-700 mt-1">
+              <p className="text-sm font-medium text-emerald-900">About Customer Records</p>
+              <p className="text-xs text-emerald-700 mt-1">
                 Customer records help track credit sales and purchase history. Only name
                 is required, but adding contact information helps with credit follow-ups.
               </p>

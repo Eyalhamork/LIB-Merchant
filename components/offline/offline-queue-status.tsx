@@ -46,7 +46,7 @@ export function OfflineQueueStatus() {
     return (
       <div className="bg-white rounded-lg border border-gray-200 p-6">
         <div className="flex items-center gap-3 mb-4">
-          <Cloud className="w-6 h-6 text-blue-600" />
+          <Cloud className="w-6 h-6 text-emerald-600" />
           <h3 className="text-lg font-semibold text-gray-900">Offline Queue</h3>
         </div>
         <div className="text-center py-8">
@@ -68,7 +68,7 @@ export function OfflineQueueStatus() {
       <div className="px-6 py-4 border-b border-gray-200">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <Cloud className="w-6 h-6 text-blue-600" />
+            <Cloud className="w-6 h-6 text-emerald-600" />
             <div>
               <h3 className="text-lg font-semibold text-gray-900">Offline Queue</h3>
               <p className="text-sm text-gray-600">
@@ -84,7 +84,7 @@ export function OfflineQueueStatus() {
               </span>
             )}
             {isSyncing && (
-              <span className="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full flex items-center gap-2">
+              <span className="px-3 py-1 bg-emerald-100 text-emerald-700 text-sm font-medium rounded-full flex items-center gap-2">
                 <RefreshCw className="w-4 h-4 animate-spin" />
                 Syncing
               </span>
@@ -154,7 +154,7 @@ export function OfflineQueueStatus() {
                   <button
                     onClick={() => handleRetry(transaction)}
                     disabled={retrying === transaction.local_id}
-                    className="p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors disabled:opacity-50"
+                    className="p-2 text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors disabled:opacity-50"
                     title="Retry"
                   >
                     <RefreshCw

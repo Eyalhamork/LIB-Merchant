@@ -119,7 +119,7 @@ export default function TestOfflinePage() {
 
             <button
               onClick={addTestTransaction}
-              className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              className="w-full sm:w-auto px-6 py-3 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 transition-colors"
             >
               Add Test Transaction
             </button>
@@ -168,10 +168,10 @@ export default function TestOfflinePage() {
         </div>
 
         {/* Notes */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <p className="text-sm text-blue-800">
+        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+          <p className="text-sm text-emerald-800">
             <strong>Note:</strong> Service workers only work in production builds and on HTTPS.
-            Use <code className="bg-blue-100 px-1 rounded">npm run build && npm start</code> to test locally.
+            Use <code className="bg-emerald-100 px-1 rounded">npm run build && npm start</code> to test locally.
           </p>
         </div>
       </div>

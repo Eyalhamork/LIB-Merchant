@@ -157,10 +157,10 @@ export function FindTransactionStep({
 
       {/* Helper Text */}
       {!hasSearched && (
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
           <div className="flex items-start">
             <svg
-              className="h-5 w-5 text-blue-600 mt-0.5 mr-3 flex-shrink-0"
+              className="h-5 w-5 text-emerald-600 mt-0.5 mr-3 flex-shrink-0"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -171,8 +171,8 @@ export function FindTransactionStep({
               />
             </svg>
             <div>
-              <h4 className="text-sm font-medium text-blue-900">Search Tips</h4>
-              <ul className="mt-1 text-sm text-blue-700 list-disc list-inside space-y-1">
+              <h4 className="text-sm font-medium text-emerald-900">Search Tips</h4>
+              <ul className="mt-1 text-sm text-emerald-700 list-disc list-inside space-y-1">
                 <li>Search by receipt number (e.g., RCP-20240115-0001)</li>
                 <li>Search by customer name</li>
                 <li>Search by product name</li>

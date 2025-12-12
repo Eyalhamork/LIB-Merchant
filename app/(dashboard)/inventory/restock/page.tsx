@@ -80,14 +80,14 @@ export default function RestockPage() {
               onClick={() => setMode('single')}
               className={`p-4 border-2 rounded-lg transition-colors ${
                 mode === 'single'
-                  ? 'border-blue-600 bg-blue-50'
+                  ? 'border-emerald-600 bg-emerald-50'
                   : 'border-gray-200 hover:border-gray-300'
               }`}
             >
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Package
                   className={`h-6 w-6 ${
-                    mode === 'single' ? 'text-blue-600' : 'text-gray-400'
+                    mode === 'single' ? 'text-emerald-600' : 'text-gray-400'
                   }`}
                 />
               </div>
@@ -101,14 +101,14 @@ export default function RestockPage() {
               onClick={() => setMode('bulk')}
               className={`p-4 border-2 rounded-lg transition-colors ${
                 mode === 'bulk'
-                  ? 'border-blue-600 bg-blue-50'
+                  ? 'border-emerald-600 bg-emerald-50'
                   : 'border-gray-200 hover:border-gray-300'
               }`}
             >
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Layers
                   className={`h-6 w-6 ${
-                    mode === 'bulk' ? 'text-blue-600' : 'text-gray-400'
+                    mode === 'bulk' ? 'text-emerald-600' : 'text-gray-400'
                   }`}
                 />
               </div>

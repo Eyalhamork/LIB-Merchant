@@ -151,7 +151,7 @@ export default function ReturnsPage() {
                     </div>
                     <div>
                       <p className="text-gray-600">Original Transaction</p>
-                      <p className="font-medium text-blue-600">
+                      <p className="font-medium text-emerald-600">
                         #{returnItem.original_transaction_id.slice(0, 8)}
                       </p>
                     </div>

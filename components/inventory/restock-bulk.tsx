@@ -290,10 +290,10 @@ export default function RestockBulk({
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       {/* Instructions */}
-      <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+      <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
         <div className="flex items-start gap-2">
-          <AlertCircle className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-          <div className="text-sm text-blue-900">
+          <AlertCircle className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+          <div className="text-sm text-emerald-900">
             <p className="font-medium mb-1">Bulk Restock</p>
             <p>
               Add multiple products to restock at once. All items will be processed

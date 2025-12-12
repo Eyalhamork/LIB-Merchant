@@ -109,7 +109,7 @@ export default function LoginPage() {
                 </label>
                 <Link
                   href="/reset-password"
-                  className="text-sm text-blue-600 hover:text-blue-700"
+                  className="text-sm text-emerald-600 hover:text-emerald-700"
                 >
                   Forgot password?
                 </Link>
@@ -157,7 +157,7 @@ export default function LoginPage() {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
             Don't have an account?{' '}
-            <Link href="/register" className="text-blue-600 hover:text-blue-700 font-medium">
+            <Link href="/register" className="text-emerald-600 hover:text-emerald-700 font-medium">
               Start your free trial
             </Link>
           </p>

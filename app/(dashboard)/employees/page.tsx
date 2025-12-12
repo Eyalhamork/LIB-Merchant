@@ -85,7 +85,7 @@ export default function EmployeesPage() {
 
   const getRoleBadgeColor = (role: string) => {
     if (role === 'owner') return 'bg-purple-100 text-purple-800';
-    if (role === 'supervisor') return 'bg-blue-100 text-blue-800';
+    if (role === 'supervisor') return 'bg-emerald-100 text-emerald-800';
     return 'bg-gray-100 text-gray-800';
   };
 
@@ -155,7 +155,7 @@ export default function EmployeesPage() {
                 onClick={() => setFilterStatus('all')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   filterStatus === 'all'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -165,7 +165,7 @@ export default function EmployeesPage() {
                 onClick={() => setFilterStatus('active')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   filterStatus === 'active'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -175,7 +175,7 @@ export default function EmployeesPage() {
                 onClick={() => setFilterStatus('inactive')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   filterStatus === 'inactive'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -259,22 +259,22 @@ export default function EmployeesPage() {
                         {employee.role === 'supervisor' && (
                           <div className="flex flex-wrap gap-2 mt-2">
                             {employee.can_change_prices && (
-                              <Badge className="bg-blue-50 text-blue-700 text-xs">
+                              <Badge className="bg-emerald-50 text-emerald-700 text-xs">
                                 Change Prices
                               </Badge>
                             )}
                             {employee.can_process_returns && (
-                              <Badge className="bg-blue-50 text-blue-700 text-xs">
+                              <Badge className="bg-emerald-50 text-emerald-700 text-xs">
                                 Process Returns
                               </Badge>
                             )}
                             {employee.can_void_transactions && (
-                              <Badge className="bg-blue-50 text-blue-700 text-xs">
+                              <Badge className="bg-emerald-50 text-emerald-700 text-xs">
                                 Void Transactions
                               </Badge>
                             )}
                             {employee.discount_limit_percent && (
-                              <Badge className="bg-blue-50 text-blue-700 text-xs">
+                              <Badge className="bg-emerald-50 text-emerald-700 text-xs">
                                 Discount up to {employee.discount_limit_percent}%
                               </Badge>
                             )}

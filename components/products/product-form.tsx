@@ -389,7 +389,7 @@ export function ProductForm({
               setFormData({ ...formData, is_favorite: e.target.checked })
             }
             disabled={isSubmitting}
-            className="mt-1 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+            className="mt-1 h-4 w-4 text-emerald-600 border-gray-300 rounded focus:ring-blue-500"
           />
           <div className="flex-1">
             <label
@@ -407,10 +407,10 @@ export function ProductForm({
 
       {/* Info Banner */}
       {mode === 'edit' && (
-        <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
           <div className="flex items-start gap-2">
-            <AlertCircle className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
-            <p className="text-sm text-blue-900">
+            <AlertCircle className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" />
+            <p className="text-sm text-emerald-900">
               Product details (name, category, etc.) cannot be changed after creation.
               You can update pricing, reorder level, and favorite status.
             </p>

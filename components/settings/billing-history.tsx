@@ -209,7 +209,7 @@ export function BillingHistory({ shopId }: BillingHistoryProps) {
             {record.status === 'paid' && (
               <button
                 onClick={() => handleDownloadInvoice(record)}
-                className="ml-4 p-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
+                className="ml-4 p-2 text-emerald-600 hover:bg-emerald-50 rounded-lg transition-colors"
                 title="Download Invoice"
               >
                 <Download className="h-5 w-5" />

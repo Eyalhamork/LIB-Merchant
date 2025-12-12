@@ -185,18 +185,18 @@ export default function RestockForm({
 
       {/* Current Stock Info */}
       {selectedProduct && (
-        <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
           <div className="space-y-3">
             <div className="flex items-center gap-2">
-              <Package className="h-5 w-5 text-blue-600" />
-              <span className="text-sm font-medium text-blue-900">
+              <Package className="h-5 w-5 text-emerald-600" />
+              <span className="text-sm font-medium text-emerald-900">
                 {selectedProduct.product?.name}
               </span>
             </div>
             <div className="grid grid-cols-2 gap-4 text-sm">
               <div>
-                <span className="text-blue-700">Current Stock:</span>
-                <span className="ml-2 font-medium text-blue-900">
+                <span className="text-emerald-700">Current Stock:</span>
+                <span className="ml-2 font-medium text-emerald-900">
                   {formatQuantity(
                     selectedProduct.current_quantity,
                     selectedProduct.product?.unit
@@ -204,14 +204,14 @@ export default function RestockForm({
                 </span>
               </div>
               <div>
-                <span className="text-blue-700">Current Cost:</span>
-                <span className="ml-2 font-medium text-blue-900">
+                <span className="text-emerald-700">Current Cost:</span>
+                <span className="ml-2 font-medium text-emerald-900">
                   {formatCurrency(selectedProduct.cost_price)}
                 </span>
               </div>
               <div>
-                <span className="text-blue-700">Reorder Level:</span>
-                <span className="ml-2 font-medium text-blue-900">
+                <span className="text-emerald-700">Reorder Level:</span>
+                <span className="ml-2 font-medium text-emerald-900">
                   {formatQuantity(
                     selectedProduct.reorder_level,
                     selectedProduct.product?.unit
@@ -219,8 +219,8 @@ export default function RestockForm({
                 </span>
               </div>
               <div>
-                <span className="text-blue-700">Selling Price:</span>
-                <span className="ml-2 font-medium text-blue-900">
+                <span className="text-emerald-700">Selling Price:</span>
+                <span className="ml-2 font-medium text-emerald-900">
                   {formatCurrency(selectedProduct.selling_price)}
                 </span>
               </div>

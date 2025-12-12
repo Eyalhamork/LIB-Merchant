@@ -125,7 +125,7 @@ export default function CustomersPage() {
                 onClick={() => setFilterStatus('all')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   filterStatus === 'all'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -135,7 +135,7 @@ export default function CustomersPage() {
                 onClick={() => setFilterStatus('active')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   filterStatus === 'active'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -145,7 +145,7 @@ export default function CustomersPage() {
                 onClick={() => setFilterStatus('credit')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   filterStatus === 'credit'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >

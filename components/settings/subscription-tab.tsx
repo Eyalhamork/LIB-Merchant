@@ -34,7 +34,7 @@ export function SubscriptionTab({ shop, onUpdate }: SubscriptionTabProps) {
   const getStatusBadge = (status: SubscriptionStatus) => {
     switch (status) {
       case 'trial':
-        return <Badge className="bg-blue-100 text-blue-800">Trial</Badge>;
+        return <Badge className="bg-emerald-100 text-emerald-800">Trial</Badge>;
       case 'active':
         return <Badge className="bg-green-100 text-green-800">Active</Badge>;
       case 'expired':
@@ -49,7 +49,7 @@ export function SubscriptionTab({ shop, onUpdate }: SubscriptionTabProps) {
   const getPlanIcon = (plan: SubscriptionPlan) => {
     switch (plan) {
       case 'starter':
-        return <Zap className="h-5 w-5 text-blue-600" />;
+        return <Zap className="h-5 w-5 text-emerald-600" />;
       case 'professional':
         return <Crown className="h-5 w-5 text-purple-600" />;
       default:
@@ -95,7 +95,7 @@ export function SubscriptionTab({ shop, onUpdate }: SubscriptionTabProps) {
   const getStatusColor = (status: SubscriptionStatus) => {
     switch (status) {
       case 'trial':
-        return 'bg-blue-50 border-blue-200 text-blue-900';
+        return 'bg-emerald-50 border-emerald-200 text-emerald-900';
       case 'active':
         return 'bg-green-50 border-green-200 text-green-900';
       case 'expired':
@@ -263,7 +263,7 @@ export function SubscriptionTab({ shop, onUpdate }: SubscriptionTabProps) {
             Upgrade to Professional
           </h2>
 
-          <Card className="p-6 bg-gradient-to-br from-purple-50 to-blue-50 border-purple-200">
+          <Card className="p-6 bg-gradient-to-br from-emerald-50 to-teal-50 border-purple-200">
             <div className="flex items-start gap-4">
               <div className="h-12 w-12 rounded-full bg-purple-100 flex items-center justify-center flex-shrink-0">
                 <Crown className="h-6 w-6 text-purple-600" />
@@ -309,7 +309,7 @@ export function SubscriptionTab({ shop, onUpdate }: SubscriptionTabProps) {
           <div className="space-y-2 text-sm">
             <div className="flex items-center gap-2">
               <span className="font-medium text-gray-900">Email:</span>
-              <span className="text-blue-600">support@shopmanager.com</span>
+              <span className="text-emerald-600">support@shopmanager.com</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="font-medium text-gray-900">Phone:</span>

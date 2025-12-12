@@ -100,7 +100,7 @@ export function ConflictResolutionModal() {
                 onClick={() => setSelectedTransaction(transaction)}
                 className={`w-full p-4 text-left border-b border-gray-100 hover:bg-gray-50 transition-colors ${
                   selectedTransaction?.local_id === transaction.local_id
-                    ? 'bg-blue-50 border-l-4 border-l-blue-500'
+                    ? 'bg-emerald-50 border-l-4 border-l-emerald-500'
                     : ''
                 }`}
               >
@@ -225,7 +225,7 @@ export function ConflictResolutionModal() {
                   <button
                     onClick={() => handleRetry(selectedTransaction)}
                     disabled={isRetrying}
-                    className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                    className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                   >
                     {isRetrying ? (
                       <>

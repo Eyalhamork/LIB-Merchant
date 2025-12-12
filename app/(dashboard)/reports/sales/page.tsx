@@ -272,8 +272,8 @@ export default function SalesReportPage() {
                     {stats.total_transactions}
                   </p>
                 </div>
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                  <ShoppingCart className="h-6 w-6 text-blue-600" />
+                <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                  <ShoppingCart className="h-6 w-6 text-emerald-600" />
                 </div>
               </div>
             </Card>
@@ -444,12 +444,12 @@ export default function SalesReportPage() {
                 </p>
               </div>
 
-              <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-                <p className="text-sm text-blue-700 font-medium">Mobile Money</p>
-                <p className="text-xl font-bold text-blue-900 mt-1">
+              <div className="p-4 bg-emerald-50 rounded-lg border border-emerald-200">
+                <p className="text-sm text-emerald-700 font-medium">Mobile Money</p>
+                <p className="text-xl font-bold text-emerald-900 mt-1">
                   {formatCurrency(stats.momo_sales)}
                 </p>
-                <p className="text-xs text-blue-600 mt-1">
+                <p className="text-xs text-emerald-600 mt-1">
                   {stats.total_sales > 0
                     ? ((stats.momo_sales / stats.total_sales) * 100).toFixed(1)
                     : 0}
@@ -541,8 +541,8 @@ export default function SalesReportPage() {
                   className="flex items-center justify-between p-3 bg-gray-50 rounded-lg"
                 >
                   <div className="flex items-center gap-3">
-                    <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                      <span className="text-sm font-bold text-blue-600">
+                    <div className="h-8 w-8 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                      <span className="text-sm font-bold text-emerald-600">
                         {index + 1}
                       </span>
                     </div>
