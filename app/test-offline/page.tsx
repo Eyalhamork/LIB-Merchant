@@ -2,7 +2,7 @@
 
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { WifiOff, Wifi } from 'lucide-react';
 import { useOffline } from '@/hooks/use-offline';
 import { useOfflineStore } from '@/store/offline-store';
@@ -14,6 +14,22 @@ export default function TestOfflinePage() {
   const { isOnline, isOffline } = useOffline();
   const { addToQueue, queue } = useOfflineStore();
   const [testMode, setTestMode] = useState<'online' | 'offline'>('online');
+  const [browserInfo, setBrowserInfo] = useState({
+    hasServiceWorker: false,
+    hasController: false,
+    hasIndexedDB: false,
+  });
+
+  // Check browser APIs after mount (client-side only)
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setBrowserInfo({
+        hasServiceWorker: 'serviceWorker' in navigator,
+        hasController: !!(navigator.serviceWorker?.controller),
+        hasIndexedDB: 'indexedDB' in window,
+      });
+    }
+  }, []);
 
   const addTestTransaction = () => {
     const transaction: OfflineTransaction = {
@@ -139,26 +155,26 @@ export default function TestOfflinePage() {
             <div className="flex justify-between">
               <span className="text-gray-600">Supported:</span>
               <span className="font-medium">
-                {'serviceWorker' in navigator ? 'Yes' : 'No'}
+                {browserInfo.hasServiceWorker ? 'Yes' : 'No'}
               </span>
             </div>
-            
+
             <div className="flex justify-between">
               <span className="text-gray-600">Controller:</span>
               <span className="font-medium">
-                {navigator.serviceWorker?.controller ? 'Active' : 'None'}
+                {browserInfo.hasController ? 'Active' : 'None'}
               </span>
             </div>
 
             <div className="flex justify-between">
               <span className="text-gray-600">IndexedDB:</span>
               <span className="font-medium">
-                {'indexedDB' in window ? 'Supported' : 'Not Supported'}
+                {browserInfo.hasIndexedDB ? 'Supported' : 'Not Supported'}
               </span>
             </div>
           </div>
 
-          {typeof navigator !== 'undefined' && navigator.serviceWorker?.controller && (
+          {browserInfo.hasController && (
             <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded-lg">
               <p className="text-sm text-green-700">
                 ✓ Service worker is active and ready
