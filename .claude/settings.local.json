@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(npx tailwindcss --help:*)",
+      "Bash(if exist .next rmdir /s /q .next)",
+      "Bash(powershell -Command \"if (Test-Path .next) { Remove-Item -Recurse -Force .next; Write-Output ''Build cache cleared successfully'' } else { Write-Output ''No build cache to clear'' }\")",
+      "Bash(npm install)",
+      "Bash(npm run type-check:*)",
+      "Bash(npm install:*)",
+      "Bash(findstr:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(if not exist \"c:\\Users\\Layee Kromah\\Documents\\shopmanager\\components\\inventory\" mkdir \"c:\\Users\\Layee Kromah\\Documents\\shopmanager\\components\\inventory\")",
+      "Bash(git init:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(if exist nul del nul)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
