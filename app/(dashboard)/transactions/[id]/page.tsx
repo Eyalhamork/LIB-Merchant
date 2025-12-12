@@ -116,7 +116,7 @@ export default function TransactionDetailPage() {
 
           <div class="footer">
             <p>Thank you for your business!</p>
-            <p>Powered by ShopManager</p>
+            <p>Powered by LIB-Merchant</p>
           </div>
         </body>
         </html>

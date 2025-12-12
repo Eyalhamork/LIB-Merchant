@@ -152,7 +152,7 @@ export function ReceiptPreview({
         {/* Footer */}
         <div className="text-center text-xs text-gray-500 pt-4 border-t border-gray-300">
           <p>Thank you for your business!</p>
-          <p className="mt-1">Powered by ShopManager</p>
+          <p className="mt-1">Powered by LIB-Merchant</p>
         </div>
       </div>
 

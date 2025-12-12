@@ -113,7 +113,7 @@ export default function RegisterPage() {
       <div className="w-full max-w-md">
         {/* Logo/Brand */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-900">ShopManager</h1>
+          <h1 className="text-3xl font-bold text-gray-900">LIB-Merchant</h1>
           <p className="text-gray-600 mt-2">Start your 30-day free trial</p>
         </div>
 

@@ -29,7 +29,7 @@ export default function Header({ user, shopName }: HeaderProps) {
     if (pathname.startsWith('/reports')) return 'Reports';
     if (pathname.startsWith('/employees')) return 'Employees';
     if (pathname.startsWith('/settings')) return 'Settings';
-    return 'ShopManager';
+    return 'LIB-Merchant';
   };
 
   return (

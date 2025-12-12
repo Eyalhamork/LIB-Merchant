@@ -1,6 +1,6 @@
 import type { BusinessType, PaymentMethod, UserRole } from '@/types';
 
-export const APP_NAME = 'ShopManager';
+export const APP_NAME = 'LIB-Merchant';
 export const APP_VERSION = '1.0.0';
 
 // Business types

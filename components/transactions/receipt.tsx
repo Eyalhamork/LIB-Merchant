@@ -177,7 +177,7 @@ export const Receipt = forwardRef<HTMLDivElement, ReceiptProps>(
           <div className="border-t-2 border-dashed border-gray-300 pt-3 text-center">
             <p className="text-sm text-gray-600">Thank you for your business!</p>
             <p className="text-xs text-gray-500 mt-2">
-              Powered by ShopManager
+              Powered by LIB-Merchant
             </p>
           </div>
         </div>

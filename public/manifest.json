@@ -1,7 +1,7 @@
 // public/manifest.json
 {
-  "name": "ShopManager - Inventory & POS",
-  "short_name": "ShopManager",
+  "name": "LIB-Merchant - Inventory & POS",
+  "short_name": "LIB-Merchant",
   "description": "Inventory and sales management system for retail shops in Liberia",
   "start_url": "/",
   "display": "standalone",

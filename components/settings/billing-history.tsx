@@ -96,7 +96,7 @@ export function BillingHistory({ shopId }: BillingHistoryProps) {
       </head>
       <body>
         <div class="header">
-          <h1>ShopManager Invoice</h1>
+          <h1>LIB-Merchant Invoice</h1>
           <p>Invoice #${record.invoice_number || record.id.slice(0, 8)}</p>
         </div>
 
@@ -133,7 +133,7 @@ export function BillingHistory({ shopId }: BillingHistoryProps) {
 
         <div class="footer">
           <p>Thank you for your business!</p>
-          <p>ShopManager - Professional Shop Management System</p>
+          <p>LIB-Merchant - Professional Shop Management System</p>
         </div>
       </body>
       </html>

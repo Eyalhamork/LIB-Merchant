@@ -128,7 +128,7 @@ export const useCartStore = create<CartStore>()(
       },
     }),
     {
-      name: 'shopmanager-cart',
+      name: 'lib-merchant-cart',
     }
   )
 );

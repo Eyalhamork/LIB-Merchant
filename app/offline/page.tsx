@@ -17,7 +17,7 @@ export default function OfflinePage() {
         </h1>
         
         <p className="text-gray-600 mb-6 max-w-md mx-auto">
-          ShopManager needs an internet connection to load this page.
+          LIB-Merchant needs an internet connection to load this page.
           Don't worry - you can still make sales at the POS when offline.
         </p>
 

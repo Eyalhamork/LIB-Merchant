@@ -92,7 +92,7 @@ export function TermsStep({ accepted, onSubmit, onBack, isLoading }: TermsStepPr
 
           <p>
             <strong>3. Data Ownership:</strong> You retain full ownership of all data
-            entered into ShopManager. We do not claim any rights to your business data.
+            entered into LIB-Merchant. We do not claim any rights to your business data.
           </p>
 
           <p>
@@ -102,7 +102,7 @@ export function TermsStep({ accepted, onSubmit, onBack, isLoading }: TermsStepPr
           </p>
 
           <p>
-            <strong>5. Acceptable Use:</strong> You agree not to use ShopManager for any
+            <strong>5. Acceptable Use:</strong> You agree not to use LIB-Merchant for any
             illegal purposes or in violation of Liberian laws and regulations.
           </p>
 
