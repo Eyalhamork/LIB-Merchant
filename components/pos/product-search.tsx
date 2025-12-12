@@ -112,7 +112,7 @@ export default function ProductSearch({
         />
         <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
           {isSearching && (
-            <div className="w-4 h-4 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+            <div className="w-4 h-4 border-2 border-emerald-600 border-t-transparent rounded-full animate-spin" />
           )}
           {query && (
             <button
@@ -145,7 +145,7 @@ export default function ProductSearch({
                     {product.product?.name}
                   </p>
                   <div className="flex items-center gap-3 mt-1 text-sm text-gray-600">
-                    <span className="font-semibold text-blue-600">
+                    <span className="font-semibold text-emerald-600">
                       {product.selling_price.toLocaleString('en-US', {
                         minimumFractionDigits: 2,
                         maximumFractionDigits: 2,

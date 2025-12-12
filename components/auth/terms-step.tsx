@@ -42,11 +42,11 @@ export function TermsStep({ accepted, onSubmit, onBack, isLoading }: TermsStepPr
       </div>
 
       {/* Trial Information */}
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+      <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
         <div className="flex items-start">
           <div className="flex-shrink-0">
             <svg
-              className="h-5 w-5 text-blue-600"
+              className="h-5 w-5 text-emerald-600"
               fill="currentColor"
               viewBox="0 0 20 20"
             >
@@ -58,10 +58,10 @@ export function TermsStep({ accepted, onSubmit, onBack, isLoading }: TermsStepPr
             </svg>
           </div>
           <div className="ml-3">
-            <h3 className="text-sm font-medium text-blue-900">
+            <h3 className="text-sm font-medium text-emerald-900">
               30-Day Free Trial
             </h3>
-            <div className="mt-1 text-sm text-blue-700">
+            <div className="mt-1 text-sm text-emerald-700">
               <p>Your free trial includes:</p>
               <ul className="list-disc list-inside mt-1 space-y-1">
                 <li>Full access to all features</li>
@@ -128,11 +128,11 @@ export function TermsStep({ accepted, onSubmit, onBack, isLoading }: TermsStepPr
               setTermsAccepted(e.target.checked);
               setError('');
             }}
-            className="mt-1 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+            className="mt-1 h-4 w-4 text-emerald-600 border-gray-300 rounded focus:ring-blue-500"
           />
           <span className="ml-2 text-sm text-gray-700">
             I have read and agree to the{' '}
-            <a href="#" className="text-blue-600 hover:text-blue-700 font-medium">
+            <a href="#" className="text-emerald-600 hover:text-emerald-700 font-medium">
               Terms of Service
             </a>
           </span>
@@ -146,11 +146,11 @@ export function TermsStep({ accepted, onSubmit, onBack, isLoading }: TermsStepPr
               setPrivacyAccepted(e.target.checked);
               setError('');
             }}
-            className="mt-1 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+            className="mt-1 h-4 w-4 text-emerald-600 border-gray-300 rounded focus:ring-blue-500"
           />
           <span className="ml-2 text-sm text-gray-700">
             I agree to the{' '}
-            <a href="#" className="text-blue-600 hover:text-blue-700 font-medium">
+            <a href="#" className="text-emerald-600 hover:text-emerald-700 font-medium">
               Privacy Policy
             </a>
           </span>

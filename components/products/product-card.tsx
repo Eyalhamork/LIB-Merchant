@@ -113,7 +113,7 @@ export function ProductCard({
                 <button
                   type="button"
                   onClick={handleEditClick}
-                  className="p-1 text-gray-400 hover:text-blue-600 transition-colors"
+                  className="p-1 text-gray-400 hover:text-emerald-700 transition-colors"
                 >
                   <Edit className="h-5 w-5" />
                 </button>

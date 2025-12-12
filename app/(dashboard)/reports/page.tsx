@@ -120,8 +120,8 @@ export default function ReportsPage() {
                       {todayStats.total_transactions}
                     </p>
                   </div>
-                  <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                    <ShoppingCart className="h-6 w-6 text-blue-600" />
+                  <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                    <ShoppingCart className="h-6 w-6 text-emerald-600" />
                   </div>
                 </div>
               </Card>
@@ -246,8 +246,8 @@ export default function ReportsPage() {
               <div className="flex items-start justify-between">
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
-                      <TrendingUp className="h-5 w-5 text-blue-600" />
+                    <div className="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center">
+                      <TrendingUp className="h-5 w-5 text-emerald-600" />
                     </div>
                     <h3 className="font-semibold text-gray-900">Sales Report</h3>
                   </div>

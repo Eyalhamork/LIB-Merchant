@@ -50,17 +50,17 @@ export function CreditSummaryCard({
           </p>
         </div>
 
-        <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
+        <div className="p-3 bg-emerald-50 rounded-lg border border-emerald-200">
           <div className="flex items-center gap-2 mb-1">
-            <Users className="h-4 w-4 text-blue-600" />
-            <span className="text-xs text-blue-700 font-medium">
+            <Users className="h-4 w-4 text-emerald-600" />
+            <span className="text-xs text-emerald-700 font-medium">
               Customers with Credit
             </span>
           </div>
-          <p className="text-xl font-bold text-blue-900">
+          <p className="text-xl font-bold text-emerald-900">
             {customersWithCredit}
           </p>
-          <p className="text-xs text-blue-600 mt-1">
+          <p className="text-xs text-emerald-600 mt-1">
             {percentageWithCredit.toFixed(1)}% of total
           </p>
         </div>

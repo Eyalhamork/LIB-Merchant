@@ -67,7 +67,7 @@ export function PaymentSelector({
             className={cn(
               'relative p-4 rounded-lg border-2 transition-all',
               isSelected && !isDisabled
-                ? 'border-blue-500 bg-blue-50'
+                ? 'border-emerald-500 bg-emerald-50'
                 : isDisabled
                 ? 'border-gray-200 bg-gray-50 opacity-50 cursor-not-allowed'
                 : 'border-gray-200 hover:border-gray-300 bg-white'
@@ -97,14 +97,14 @@ export function PaymentSelector({
               <span
                 className={cn(
                   'text-sm font-medium',
-                  isSelected ? 'text-blue-700' : 'text-gray-700'
+                  isSelected ? 'text-emerald-700' : 'text-gray-700'
                 )}
               >
                 {method.label}
               </span>
 
               {isUsed && (
-                <span className="absolute top-2 right-2 px-2 py-0.5 bg-blue-100 text-blue-700 text-xs font-medium rounded-full">
+                <span className="absolute top-2 right-2 px-2 py-0.5 bg-emerald-100 text-emerald-700 text-xs font-medium rounded-full">
                   Used
                 </span>
               )}
@@ -112,7 +112,7 @@ export function PaymentSelector({
 
             {/* Selection Indicator */}
             {isSelected && !isDisabled && (
-              <div className="absolute -top-1 -right-1 h-6 w-6 bg-blue-500 rounded-full flex items-center justify-center">
+              <div className="absolute -top-1 -right-1 h-6 w-6 bg-emerald-500 rounded-full flex items-center justify-center">
                 <svg
                   className="h-4 w-4 text-white"
                   fill="none"

@@ -83,11 +83,11 @@ export function PinSwitch({ isOpen, onClose }: PinSwitchProps) {
     <Modal isOpen={isOpen} onClose={handleClose} title="Switch User">
       <div className="space-y-4">
         {/* Info */}
-        <div className="flex items-start gap-3 p-3 bg-blue-50 border border-blue-200 rounded-lg">
-          <UserSwitch className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+        <div className="flex items-start gap-3 p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+          <UserSwitch className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
           <div>
-            <p className="text-sm font-medium text-blue-900">Quick User Switch</p>
-            <p className="text-sm text-blue-800 mt-1">
+            <p className="text-sm font-medium text-emerald-900">Quick User Switch</p>
+            <p className="text-sm text-emerald-800 mt-1">
               Enter your PIN to switch to your account without logging out.
             </p>
           </div>

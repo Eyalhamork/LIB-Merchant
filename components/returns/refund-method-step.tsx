@@ -139,14 +139,14 @@ export function RefundMethodStep({
       </div>
 
       {/* Refund Summary */}
-      <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+      <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
         <div className="flex items-center justify-between mb-3">
-          <p className="text-sm font-medium text-blue-900">Total Refund Amount</p>
-          <p className="text-2xl font-bold text-blue-900">
+          <p className="text-sm font-medium text-emerald-900">Total Refund Amount</p>
+          <p className="text-2xl font-bold text-emerald-900">
             {formatCurrency(totalRefund)}
           </p>
         </div>
-        <div className="text-sm text-blue-700">
+        <div className="text-sm text-emerald-700">
           <p>{returnItems.length} item(s) being returned</p>
         </div>
       </div>
@@ -162,10 +162,10 @@ export function RefundMethodStep({
             onChange={(e) => setSelectedMethod(e.target.value as RefundMethod)}
             className="sr-only peer"
           />
-          <div className="border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-300 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-colors">
+          <div className="border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-emerald-300 peer-checked:border-emerald-600 peer-checked:bg-emerald-50 transition-colors">
             <div className="flex items-start">
               <div className="flex-shrink-0 mt-0.5">
-                <div className="w-5 h-5 rounded-full border-2 border-gray-300 peer-checked:border-blue-600 peer-checked:bg-blue-600 flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full border-2 border-gray-300 peer-checked:border-emerald-600 peer-checked:bg-emerald-600 flex items-center justify-center">
                   {selectedMethod === 'cash' && (
                     <div className="w-2 h-2 rounded-full bg-white" />
                   )}
@@ -191,10 +191,10 @@ export function RefundMethodStep({
             className="sr-only peer"
             disabled={!transaction.customer_id}
           />
-          <div className="border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-300 peer-checked:border-blue-600 peer-checked:bg-blue-50 peer-disabled:opacity-50 peer-disabled:cursor-not-allowed transition-colors">
+          <div className="border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-emerald-300 peer-checked:border-emerald-600 peer-checked:bg-emerald-50 peer-disabled:opacity-50 peer-disabled:cursor-not-allowed transition-colors">
             <div className="flex items-start">
               <div className="flex-shrink-0 mt-0.5">
-                <div className="w-5 h-5 rounded-full border-2 border-gray-300 peer-checked:border-blue-600 peer-checked:bg-blue-600 flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full border-2 border-gray-300 peer-checked:border-emerald-600 peer-checked:bg-emerald-600 flex items-center justify-center">
                   {selectedMethod === 'credit_to_account' && (
                     <div className="w-2 h-2 rounded-full bg-white" />
                   )}
@@ -226,10 +226,10 @@ export function RefundMethodStep({
             onChange={(e) => setSelectedMethod(e.target.value as RefundMethod)}
             className="sr-only peer"
           />
-          <div className="border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-blue-300 peer-checked:border-blue-600 peer-checked:bg-blue-50 transition-colors">
+          <div className="border-2 border-gray-200 rounded-lg p-4 cursor-pointer hover:border-emerald-300 peer-checked:border-emerald-600 peer-checked:bg-emerald-50 transition-colors">
             <div className="flex items-start">
               <div className="flex-shrink-0 mt-0.5">
-                <div className="w-5 h-5 rounded-full border-2 border-gray-300 peer-checked:border-blue-600 peer-checked:bg-blue-600 flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full border-2 border-gray-300 peer-checked:border-emerald-600 peer-checked:bg-emerald-600 flex items-center justify-center">
                   {selectedMethod === 'exchange' && (
                     <div className="w-2 h-2 rounded-full bg-white" />
                   )}

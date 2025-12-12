@@ -42,7 +42,7 @@ const MOVEMENT_TYPE_COLORS: Record<
 > = {
   sale: { bg: 'bg-red-100', text: 'text-red-700', icon: ShoppingCart },
   restock: { bg: 'bg-green-100', text: 'text-green-700', icon: TrendingUp },
-  adjustment: { bg: 'bg-blue-100', text: 'text-blue-700', icon: RotateCcw },
+  adjustment: { bg: 'bg-emerald-100', text: 'text-emerald-700', icon: RotateCcw },
   return: { bg: 'bg-teal-100', text: 'text-teal-700', icon: TrendingDown },
 };
 

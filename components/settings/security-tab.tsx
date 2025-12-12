@@ -110,8 +110,8 @@ export function SecurityTab({ profile }: SecurityTabProps) {
         <div className="p-4 border border-gray-200 rounded-lg space-y-3">
           <div className="flex items-start justify-between">
             <div className="flex items-start gap-3">
-              <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-                <Lock className="h-5 w-5 text-blue-600" />
+              <div className="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+                <Lock className="h-5 w-5 text-emerald-600" />
               </div>
               <div className="flex-1">
                 <h3 className="font-medium text-gray-900">Password</h3>
@@ -131,12 +131,12 @@ export function SecurityTab({ profile }: SecurityTabProps) {
         </div>
 
         {/* Security Info */}
-        <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
           <div className="flex items-start gap-3">
-            <Shield className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
+            <Shield className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
             <div className="flex-1">
-              <h4 className="text-sm font-medium text-blue-900">Security Tips</h4>
-              <ul className="mt-2 space-y-1 text-sm text-blue-800">
+              <h4 className="text-sm font-medium text-emerald-900">Security Tips</h4>
+              <ul className="mt-2 space-y-1 text-sm text-emerald-800">
                 <li>• Use a strong, unique password</li>
                 <li>• Don't share your PIN with anyone</li>
                 <li>• Change your password regularly</li>
@@ -408,8 +408,8 @@ function PasswordModal({
     <Modal isOpen={isOpen} onClose={handleClose} title="Change Password">
       <div className="space-y-4">
         {/* Info */}
-        <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
-          <p className="text-sm text-blue-900">
+        <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+          <p className="text-sm text-emerald-900">
             Choose a strong password with at least 8 characters. You'll use this to log in
             to your account.
           </p>

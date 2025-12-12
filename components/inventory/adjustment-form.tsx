@@ -298,16 +298,16 @@ export default function AdjustmentForm({
 
         {/* Current Stock Info */}
         {selectedProduct && (
-          <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+          <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
             <div className="flex items-start gap-3">
               <div className="flex-1">
-                <p className="text-sm font-medium text-blue-900">
+                <p className="text-sm font-medium text-emerald-900">
                   {selectedProduct.product?.name}
                 </p>
                 <div className="mt-2 grid grid-cols-2 gap-4 text-sm">
                   <div>
-                    <span className="text-blue-700">Current Stock:</span>
-                    <span className="ml-2 font-medium text-blue-900">
+                    <span className="text-emerald-700">Current Stock:</span>
+                    <span className="ml-2 font-medium text-emerald-900">
                       {formatQuantity(
                         selectedProduct.current_quantity,
                         selectedProduct.product?.unit
@@ -315,8 +315,8 @@ export default function AdjustmentForm({
                     </span>
                   </div>
                   <div>
-                    <span className="text-blue-700">Reorder Level:</span>
-                    <span className="ml-2 font-medium text-blue-900">
+                    <span className="text-emerald-700">Reorder Level:</span>
+                    <span className="ml-2 font-medium text-emerald-900">
                       {formatQuantity(
                         selectedProduct.reorder_level,
                         selectedProduct.product?.unit

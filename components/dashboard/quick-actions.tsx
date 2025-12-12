@@ -18,8 +18,8 @@ export default function QuickActions() {
       description: 'Start a new transaction',
       href: '/pos',
       icon: ShoppingCart,
-      color: 'bg-blue-500',
-      hoverColor: 'hover:bg-blue-600',
+      color: 'bg-emerald-500',
+      hoverColor: 'hover:bg-emerald-600',
     },
     {
       title: 'Add Product',

@@ -114,17 +114,17 @@ export function RecordPaymentModal({
     <Modal isOpen={isOpen} onClose={handleClose} title="Record Credit Payment">
       <div className="space-y-4">
         {/* Customer Info */}
-        <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
           <div className="flex items-start justify-between">
             <div>
-              <p className="font-medium text-blue-900">{customer.name}</p>
+              <p className="font-medium text-emerald-900">{customer.name}</p>
               {customer.phone && (
-                <p className="text-sm text-blue-700 mt-1">{customer.phone}</p>
+                <p className="text-sm text-emerald-700 mt-1">{customer.phone}</p>
               )}
             </div>
             <div className="text-right">
-              <p className="text-xs text-blue-700">Current Balance</p>
-              <p className="text-xl font-bold text-blue-900">
+              <p className="text-xs text-emerald-700">Current Balance</p>
+              <p className="text-xl font-bold text-emerald-900">
                 {formatCurrency(customer.credit_balance)}
               </p>
             </div>
@@ -161,7 +161,7 @@ export function RecordPaymentModal({
                 onClick={() =>
                   setFormData({ ...formData, amount: customer.credit_balance.toString() })
                 }
-                className="text-blue-600 hover:text-blue-700 font-medium"
+                className="text-emerald-600 hover:text-emerald-700 font-medium"
               >
                 Pay in Full
               </button>

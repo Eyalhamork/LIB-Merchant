@@ -180,9 +180,9 @@ export function UpgradeRequestModal({
         </div>
 
         {/* Contact Information */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-          <h4 className="font-medium text-blue-900 mb-2">What happens next?</h4>
-          <ul className="text-sm text-blue-800 space-y-1">
+        <div className="bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+          <h4 className="font-medium text-emerald-900 mb-2">What happens next?</h4>
+          <ul className="text-sm text-emerald-800 space-y-1">
             <li>• We'll review your upgrade request</li>
             <li>• Our team will contact you within 24 hours</li>
             <li>• You'll receive payment instructions</li>

@@ -55,7 +55,7 @@ export default function RecentTransactions({
         <h3 className="text-lg font-semibold text-gray-900">Recent Transactions</h3>
         <Link
           href="/transactions"
-          className="text-sm text-blue-600 hover:text-blue-700 font-medium"
+          className="text-sm text-emerald-600 hover:text-emerald-700 font-medium"
         >
           View All
         </Link>

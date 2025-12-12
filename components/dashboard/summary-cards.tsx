@@ -26,9 +26,9 @@ export default function SummaryCards({
       title: "Today's Sales",
       value: formatCurrency(totalSales, currency),
       icon: DollarSign,
-      color: 'bg-blue-500',
-      textColor: 'text-blue-600',
-      bgColor: 'bg-blue-50',
+      color: 'bg-emerald-500',
+      textColor: 'text-emerald-600',
+      bgColor: 'bg-emerald-50',
     },
     {
       title: 'Transactions',

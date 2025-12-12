@@ -28,8 +28,8 @@ export function CustomerCard({ customer, onClick, showCreditInfo = true }: Custo
       <div className="flex items-start justify-between">
         <div className="flex items-start gap-3 flex-1">
           {/* Avatar */}
-          <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
-            <User className="h-6 w-6 text-blue-600" />
+          <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center flex-shrink-0">
+            <User className="h-6 w-6 text-emerald-600" />
           </div>
 
           {/* Info */}

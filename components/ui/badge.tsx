@@ -21,7 +21,7 @@ export default function Badge({
     success: 'bg-success-100 text-success-800',
     danger: 'bg-danger-100 text-danger-800',
     warning: 'bg-yellow-100 text-yellow-800',
-    info: 'bg-blue-100 text-blue-800',
+    info: 'bg-emerald-100 text-emerald-800',
     default: 'bg-gray-100 text-gray-800',
   };
 
@@ -36,7 +36,7 @@ export default function Badge({
     success: 'bg-success-600',
     danger: 'bg-danger-600',
     warning: 'bg-yellow-600',
-    info: 'bg-blue-600',
+    info: 'bg-emerald-600',
     default: 'bg-gray-600',
   };
 

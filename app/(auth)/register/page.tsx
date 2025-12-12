@@ -131,7 +131,7 @@ export default function RegisterPage() {
           </div>
           <div className="w-full bg-gray-200 rounded-full h-2">
             <div
-              className="bg-blue-600 h-2 rounded-full transition-all duration-300"
+              className="bg-emerald-600 h-2 rounded-full transition-all duration-300"
               style={{ width: `${(getStepNumber() / 3) * 100}%` }}
             />
           </div>
@@ -168,7 +168,7 @@ export default function RegisterPage() {
         <div className="mt-6 text-center">
           <p className="text-sm text-gray-600">
             Already have an account?{' '}
-            <Link href="/login" className="text-blue-600 hover:text-blue-700 font-medium">
+            <Link href="/login" className="text-emerald-600 hover:text-emerald-700 font-medium">
               Sign in
             </Link>
           </p>

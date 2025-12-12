@@ -38,7 +38,7 @@ export default function Cart({ onCheckout, cashSession }: CartProps) {
           <ShoppingCart className="h-5 w-5 text-gray-700" />
           <h2 className="text-lg font-semibold text-gray-900">Cart</h2>
           {items.length > 0 && (
-            <span className="px-2 py-0.5 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">
+            <span className="px-2 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-800 rounded-full">
               {items.length}
             </span>
           )}
@@ -100,7 +100,7 @@ export default function Cart({ onCheckout, cashSession }: CartProps) {
           {/* Total */}
           <div className="flex items-center justify-between text-lg font-bold pt-2 border-t border-gray-200">
             <span className="text-gray-900">Total:</span>
-            <span className="text-blue-600">{formatCurrency(total)}</span>
+            <span className="text-emerald-600">{formatCurrency(total)}</span>
           </div>
 
           {/* Checkout Button */}

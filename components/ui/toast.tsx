@@ -104,7 +104,7 @@ function ToastItem({ toast, onClose }: { toast: Toast; onClose: () => void }) {
     success: 'bg-success-50 text-success-800 border-success-200',
     error: 'bg-danger-50 text-danger-800 border-danger-200',
     warning: 'bg-yellow-50 text-yellow-800 border-yellow-200',
-    info: 'bg-blue-50 text-blue-800 border-blue-200',
+    info: 'bg-emerald-50 text-emerald-800 border-emerald-200',
   };
 
   return (

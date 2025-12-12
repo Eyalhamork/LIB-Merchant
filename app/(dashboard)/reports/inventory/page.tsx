@@ -206,8 +206,8 @@ export default function InventoryReportPage() {
                     {valuation.total_items}
                   </p>
                 </div>
-                <div className="h-12 w-12 rounded-full bg-blue-100 flex items-center justify-center">
-                  <Package className="h-6 w-6 text-blue-600" />
+                <div className="h-12 w-12 rounded-full bg-emerald-100 flex items-center justify-center">
+                  <Package className="h-6 w-6 text-emerald-600" />
                 </div>
               </div>
             </Card>
@@ -312,7 +312,7 @@ export default function InventoryReportPage() {
                 onClick={() => setSortBy('name')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   sortBy === 'name'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -322,7 +322,7 @@ export default function InventoryReportPage() {
                 onClick={() => setSortBy('quantity')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   sortBy === 'quantity'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -332,7 +332,7 @@ export default function InventoryReportPage() {
                 onClick={() => setSortBy('value')}
                 className={`px-4 py-2 text-sm font-medium rounded-lg transition-colors ${
                   sortBy === 'value'
-                    ? 'bg-blue-600 text-white'
+                    ? 'bg-emerald-600 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >

@@ -203,8 +203,8 @@ export default function CustomerDetailPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {customer.phone && (
                     <div className="flex items-center gap-3">
-                      <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center">
-                        <Phone className="h-5 w-5 text-blue-600" />
+                      <div className="h-10 w-10 rounded-full bg-emerald-100 flex items-center justify-center">
+                        <Phone className="h-5 w-5 text-emerald-600" />
                       </div>
                       <div>
                         <p className="text-xs text-gray-500">Phone</p>
@@ -257,9 +257,9 @@ export default function CustomerDetailPage() {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                  <p className="text-sm text-blue-700 font-medium">Total Purchases</p>
-                  <p className="text-2xl font-bold text-blue-900 mt-1">
+                <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg">
+                  <p className="text-sm text-emerald-700 font-medium">Total Purchases</p>
+                  <p className="text-2xl font-bold text-emerald-900 mt-1">
                     {formatCurrency(customer.total_purchases)}
                   </p>
                 </div>

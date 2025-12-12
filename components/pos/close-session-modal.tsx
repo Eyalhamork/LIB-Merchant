@@ -165,7 +165,7 @@ export function CloseSessionModal({
 
           <div className="flex items-center justify-between text-lg font-bold pt-3 border-t border-gray-200">
             <span>Expected Balance:</span>
-            <span className="text-blue-600">{formatCurrency(expectedBalance)}</span>
+            <span className="text-emerald-600">{formatCurrency(expectedBalance)}</span>
           </div>
         </div>
 

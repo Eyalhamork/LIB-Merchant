@@ -63,9 +63,9 @@ export function SessionSummary({ session }: SessionSummaryProps) {
         )}
 
         {/* Expected Balance */}
-        <div className="flex items-center justify-between py-3 bg-blue-50 rounded-lg px-3">
-          <span className="font-medium text-blue-900">Expected Balance</span>
-          <span className="font-bold text-blue-900">
+        <div className="flex items-center justify-between py-3 bg-emerald-50 rounded-lg px-3">
+          <span className="font-medium text-emerald-900">Expected Balance</span>
+          <span className="font-bold text-emerald-900">
             {formatCurrency(expectedBalance)}
           </span>
         </div>
@@ -86,7 +86,7 @@ export function SessionSummary({ session }: SessionSummaryProps) {
                 Math.abs(discrepancy) < 0.01
                   ? 'bg-green-50'
                   : discrepancy > 0
-                  ? 'bg-blue-50'
+                  ? 'bg-emerald-50'
                   : 'bg-amber-50'
               }`}
             >
@@ -98,8 +98,8 @@ export function SessionSummary({ session }: SessionSummaryProps) {
                   </>
                 ) : discrepancy > 0 ? (
                   <>
-                    <TrendingUp className="h-5 w-5 text-blue-600" />
-                    <span className="font-medium text-blue-900">Surplus</span>
+                    <TrendingUp className="h-5 w-5 text-emerald-600" />
+                    <span className="font-medium text-emerald-900">Surplus</span>
                   </>
                 ) : (
                   <>
@@ -113,7 +113,7 @@ export function SessionSummary({ session }: SessionSummaryProps) {
                   Math.abs(discrepancy) < 0.01
                     ? 'text-green-900'
                     : discrepancy > 0
-                    ? 'text-blue-900'
+                    ? 'text-emerald-900'
                     : 'text-amber-900'
                 }`}
               >

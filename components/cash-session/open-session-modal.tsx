@@ -48,14 +48,14 @@ export function OpenSessionModal({
     <Modal isOpen={isOpen} onClose={handleClose} title="Open Cash Session">
       <div className="space-y-4">
         {/* Info */}
-        <div className="p-3 bg-blue-50 border border-blue-200 rounded-lg">
+        <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
           <div className="flex items-start gap-2">
-            <AlertCircle className="h-5 w-5 text-blue-600 flex-shrink-0 mt-0.5" />
+            <AlertCircle className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" />
             <div>
-              <h4 className="text-sm font-medium text-blue-900 mb-1">
+              <h4 className="text-sm font-medium text-emerald-900 mb-1">
                 Start Your Day
               </h4>
-              <p className="text-sm text-blue-700">
+              <p className="text-sm text-emerald-700">
                 Count the cash in your drawer and enter the amount below. This will be
                 your opening balance for today.
               </p>

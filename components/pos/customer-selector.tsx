@@ -114,7 +114,7 @@ export function CustomerSelector({
           )}
           {isSearching && (
             <div className="absolute right-3 top-1/2 -translate-y-1/2">
-              <div className="w-4 h-4 border-2 border-blue-600 border-t-transparent rounded-full animate-spin" />
+              <div className="w-4 h-4 border-2 border-emerald-600 border-t-transparent rounded-full animate-spin" />
             </div>
           )}
         </div>
@@ -122,7 +122,7 @@ export function CustomerSelector({
         {/* No Customer Option */}
         <button
           onClick={handleRemoveCustomer}
-          className="w-full p-3 border-2 border-gray-200 rounded-lg text-left hover:border-blue-500 transition-colors"
+          className="w-full p-3 border-2 border-gray-200 rounded-lg text-left hover:border-emerald-500 transition-colors"
         >
           <div className="flex items-center gap-3">
             <div className="h-10 w-10 rounded-full bg-gray-100 flex items-center justify-center">
@@ -156,7 +156,7 @@ export function CustomerSelector({
               <button
                 key={customer.id}
                 onClick={() => handleSelect(customer)}
-                className="w-full p-3 border border-gray-200 rounded-lg text-left hover:border-blue-500 hover:bg-blue-50 transition-colors"
+                className="w-full p-3 border border-gray-200 rounded-lg text-left hover:border-emerald-500 hover:bg-emerald-50 transition-colors"
               >
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">

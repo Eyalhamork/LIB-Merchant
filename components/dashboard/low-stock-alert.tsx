@@ -38,7 +38,7 @@ export default function LowStockAlert({ products, isLoading = false }: LowStockA
         </div>
         <Link
           href="/inventory"
-          className="text-sm text-blue-600 hover:text-blue-700 font-medium"
+          className="text-sm text-emerald-600 hover:text-emerald-700 font-medium"
         >
           Restock
         </Link>
@@ -127,7 +127,7 @@ export default function LowStockAlert({ products, isLoading = false }: LowStockA
           {products.length > 8 && (
             <Link
               href="/inventory"
-              className="block text-center text-sm text-blue-600 hover:text-blue-700 font-medium py-2"
+              className="block text-center text-sm text-emerald-600 hover:text-emerald-700 font-medium py-2"
             >
               View {products.length - 8} more products
             </Link>

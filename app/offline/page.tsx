@@ -22,7 +22,7 @@ export default function OfflinePage() {
         <div className="space-y-3">
           <button
             onClick={() => window.location.reload()}
-            className="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
+            className="w-full sm:w-auto px-6 py-3 bg-emerald-600 text-white rounded-lg font-medium hover:bg-emerald-700 transition-colors"
           >
             Try Again
           </button>

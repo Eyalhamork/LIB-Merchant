@@ -42,7 +42,7 @@ export default function LandingPage() {
       icon: ShoppingCart,
       title: 'Smart POS System',
       description: 'Lightning-fast checkout with split payments, discounts, and real-time inventory updates.',
-      color: 'from-blue-500 to-cyan-500',
+      color: 'from-emerald-500 to-teal-500',
     },
     {
       icon: Package,
@@ -66,7 +66,7 @@ export default function LandingPage() {
       icon: BarChart3,
       title: 'Advanced Reports',
       description: 'Daily sales, profit margins, employee performance, and inventory analytics at your fingertips.',
-      color: 'from-indigo-500 to-blue-500',
+      color: 'from-teal-500 to-cyan-500',
     },
     {
       icon: Wifi,
@@ -333,7 +333,7 @@ export default function LandingPage() {
                           </div>
                           <div>
                             <p className="text-xl font-bold mb-2">Desktop App Demo</p>
-                            <p className="text-sm text-blue-100 mb-4">
+                            <p className="text-sm text-emerald-100 mb-4">
                               Record your app screen or use a screenshot
                             </p>
                           </div>
@@ -457,7 +457,7 @@ export default function LandingPage() {
                       <item.icon className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900 mb-1 group-hover:text-emerald-600 transition-colors">
+                      <h4 className="font-bold text-gray-900 mb-1 group-hover:text-emerald-700 transition-colors">
                         {item.title}
                       </h4>
                       <p className="text-gray-600 text-sm leading-relaxed">{item.description}</p>
@@ -510,7 +510,7 @@ export default function LandingPage() {
                     <feature.icon className="w-7 h-7 text-white" />
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-700 transition-colors">
                     {feature.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">{feature.description}</p>
@@ -716,7 +716,7 @@ export default function LandingPage() {
             </Button>
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-6 text-blue-100 mt-8">
+          <div className="flex flex-wrap items-center justify-center gap-6 text-emerald-100 mt-8">
             <div className="flex items-center gap-2">
               <Lock className="w-5 h-5" />
               <span>Secure & encrypted</span>
